@@ -2,7 +2,7 @@ import Helper
 import pickle
 IMG_SIZE=28
 
-with open("Smiley_Data/CNN_Model.pkl", "rb") as pickle_file:
+with open("CNN_Model.pkl", "rb") as pickle_file:
   CNN_model = pickle.load(pickle_file)
 
 """
