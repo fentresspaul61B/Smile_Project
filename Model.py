@@ -20,12 +20,8 @@ the prediction
 
 """
 
-def make_prediction(path, IMG_SIZE=IMG_SIZE):
-  data = Helper.image_reducer(path).reshape(1, IMG_SIZE, IMG_SIZE, 1)
-  prediction = CNN_model.predict(data)[0]
-  return_dict = {"Sad": prediction[0], "Happy": prediction[1] }
-  return return_dict
-
-path = "Test_Image.png"
-
-print(make_prediction(path))
+def make_prediction(data, IMG_SIZE=IMG_SIZE):
+    data = data.reshape(1, IMG_SIZE, IMG_SIZE, 1)
+    prediction = CNN_model.predict(data)[0]
+    return_dict = {"Sad": prediction[0], "Happy": prediction[1] }
+    return return_dict

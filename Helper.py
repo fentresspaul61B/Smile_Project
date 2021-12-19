@@ -11,7 +11,7 @@ IMG_SIZE = 28
 def test():
     print("Jar Jar")
 
-def image_reducer(path, size=IMG_SIZE):
+def image_reducer(data, size=IMG_SIZE):
     """
     Function: image_reducer(path, size=IMG_SIZE)
     Inputs:
@@ -25,13 +25,16 @@ def image_reducer(path, size=IMG_SIZE):
     Outputs:
     reduced image of data type np.array
     """
-    # Reading in the image from path
-    image = img.imread(path)
+
 
     # Reducing from 3d to 2d shape
-    image = image[:,:, 0]
+    data = data[:,:, 0]
+    # standardizing data
+    data = data / 255
+
+
 
     # Resizeing Image
-    reduced_img = cv2.resize(image, (size, size))
+    reduced_img = cv2.resize(data, (size, size))
 
     return reduced_img
