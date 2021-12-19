@@ -1,5 +1,5 @@
-import My_Smiley_Model
-import My_Smiley_Helper
+from My_Smiley_Model import make_prediction
+from My_Smiley_Helper import image_reducer
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import cv2
