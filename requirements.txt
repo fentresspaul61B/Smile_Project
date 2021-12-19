@@ -7,3 +7,5 @@ streamlit_drawable_canvas==0.8.0
 
 freeglut3-dev
 libgtk2.0-dev
+
+opencv-python-headless
