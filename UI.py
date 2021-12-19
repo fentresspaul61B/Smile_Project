@@ -1,5 +1,5 @@
-import Model
-import Helper
+import My_Smiley_Model
+import My_Smiley_Helper
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import cv2
