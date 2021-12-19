@@ -26,13 +26,11 @@ def image_reducer(data, size=IMG_SIZE):
     reduced image of data type np.array
     """
 
-
     # Reducing from 3d to 2d shape
     data = data[:,:, 0]
+
     # standardizing data
     data = data / 255
-
-
 
     # Resizeing Image
     reduced_img = cv2.resize(data, (size, size))
