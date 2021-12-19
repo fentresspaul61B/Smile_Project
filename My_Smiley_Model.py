@@ -1,4 +1,4 @@
-import Helper
+import My_Smiley_Helper
 import pickle
 IMG_SIZE=28
 
