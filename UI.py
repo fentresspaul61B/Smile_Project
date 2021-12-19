@@ -5,6 +5,10 @@ import cv2
 import pandas as pd
 import numpy as np
 
+# freeglut3-dev
+# libgtk2.0-dev
+
+
 # Global Variable for Image Size
 IMG_SIZE = 28
 
