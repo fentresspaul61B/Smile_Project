@@ -2,6 +2,10 @@ import My_Smiley_Helper
 import My_Smiley_Model
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
+
+# https://www.youtube.com/watch?v=zhpI6Yhz9_4
+# https://pypi.org/project/paul-smiley-prediction/0.0.1/
+
 st.set_page_config(page_title="ML: Smiley App", page_icon = '🙂')
 
 

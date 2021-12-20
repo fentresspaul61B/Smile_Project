@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 
+
 classifiers = [
   'Development Status :: 1 - Planning',
   'Intended Audience :: Education',
@@ -9,7 +10,7 @@ classifiers = [
 ]
 
 setup(
-  name='paul_smiley_prediction',
+  name='paulsmileyprediction',
   version='0.0.1',
   description='Smiley face predictior',
   long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),

@@ -22,3 +22,8 @@ paul_smiley_prediction.egg-info/SOURCES.txt
 paul_smiley_prediction.egg-info/dependency_links.txt
 paul_smiley_prediction.egg-info/requires.txt
 paul_smiley_prediction.egg-info/top_level.txt
+paulsmileyprediction.egg-info/PKG-INFO
+paulsmileyprediction.egg-info/SOURCES.txt
+paulsmileyprediction.egg-info/dependency_links.txt
+paulsmileyprediction.egg-info/requires.txt
+paulsmileyprediction.egg-info/top_level.txt
