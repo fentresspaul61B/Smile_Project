@@ -102,8 +102,10 @@ canvas_result = st_canvas(
 # Reduce Image --> Make Prediction -->
 # Print results on screen
 if st.button("Predict"):
-    data = My_Smiley_Helper.image_reducer(canvas_result.image_data.astype('float32'))
-    predictions = My_Smiley_Model.make_prediction(data)
+    data = image_reducer(canvas_result.image_data.astype('float32'))
+    # data = My_Smiley_Helper.image_reducer(canvas_result.image_data.astype('float32'))
+    predictions = make_prediction(data)
+    # predictions = My_Smiley_Model.make_prediction(data)
     sad = predictions["Sad"] # Numerical Confidence Value for Sad
     happy = predictions["Happy"] # Numerical Confidence Value for Happy
     if sad > happy:
