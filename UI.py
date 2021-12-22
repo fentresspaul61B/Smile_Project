@@ -38,10 +38,9 @@ def image_reducer(data, size=IMG_SIZE):
 
 
 import pickle
-IMG_SIZE=28
 
 # Uploading the model from pickle
-with open("CNN_Model.pkl", "rb") as pickle_file:
+with open("Smile_Project/CNN_Model.pkl", "rb") as pickle_file:
   CNN_model = pickle.load(pickle_file)
 
 
