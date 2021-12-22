@@ -8,9 +8,6 @@ import numpy as np
 # Global Variable for Image Size
 IMG_SIZE = 28
 
-def test():
-    print("Jar Jar")
-
 def image_reducer(data, size=IMG_SIZE):
     """
     Function: image_reducer(path, size=IMG_SIZE)
