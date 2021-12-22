@@ -50,7 +50,16 @@ import pickle
 import joblib
 loaded_model = joblib.load("CNN_model_joblib.sav")
 
-
+# opencv-python-headless
+# matplotlib==3.5.0
+# numpy==1.18.1
+# opencv_python==4.5.4.58
+# pandas==0.24.2
+# streamlit==1.2.0
+# streamlit_drawable_canvas==0.8.0
+# tensorflow==2.3.1
+# Keras==2.4.3
+# joblib==0.14.1
 
 
 def make_prediction(data, IMG_SIZE=IMG_SIZE):
