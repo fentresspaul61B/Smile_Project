@@ -44,11 +44,11 @@ import pickle
 #   CNN_model = pickle.load(pickle_file)
 
 # Trying model trained in python 3.7 enviroment
-with open("CNN_Model_p7.pkl", "rb") as pickle_file:
-    CNN_model_p7 = pickle.load(pickle_file)
+# with open("CNN_Model_p7.pkl", "rb") as pickle_file:
+#     CNN_model_p7 = pickle.load(pickle_file)
 
-# import joblib
-# loaded_model = joblib.load("CNN_model_joblib.sav")
+import joblib
+loaded_model = joblib.load("CNN_model_joblib.sav")
 
 
 
@@ -69,7 +69,7 @@ def make_prediction(data, IMG_SIZE=IMG_SIZE):
 
     """
     data = data.reshape(1, IMG_SIZE, IMG_SIZE, 1)
-    prediction = CNN_model_p7.predict(data)[0]
+    prediction = loaded_model.predict(data)[0]
     return_dict = {"Sad": prediction[0], "Happy": prediction[1] }
     return return_dict
 
